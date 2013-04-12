@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="mediamu_settings"
+		label="COM_MEDIAMU_CONF_FIELDSET_LABEL"
+		description="COM_MEDIAMU_CONF_FIELDSET_LABEL_DESC"
+	>
+		<field 	name="plupload_runtime" 
+				type="list" 
+				default="full"
+				label="COM_MEDIAMU_CONF_FIELD_RUNTIME_LABEL" 
+				description="COM_MEDIAMU_CONF_FIELD_RUNTIME_LABEL_DESC"
+		>
+                        <option value="full">COM_MEDIAMU_CONF_OPTION_RUNTIME_ALL</option>
+			<option value="html5">COM_MEDIAMU_CONF_OPTION_RUNTIME_HTML5</option>
+			<option value="flash">COM_MEDIAMU_CONF_OPTION_RUNTIME_FLASH</option>
+			<option value="gears">COM_MEDIAMU_CONF_OPTION_RUNTIME_GEARS</option>
+			<option value="silverlight">COM_MEDIAMU_CONF_OPTION_RUNTIME_SILVERLIGHT</option>
+			<option value="browserplus">COM_MEDIAMU_CONF_OPTION_RUNTIME_BROSWERPLUS</option>
+			<option value="html4">COM_MEDIAMU_CONF_OPTION_RUNTIME_HTML4</option>
+		</field>
+                
+                <field 	name="enable_uploader_log" 
+				type="radio" 
+				default="0"
+				label="COM_MEDIAMU_CONF_EUL_RADIO_LABEL" 
+				description="COM_MEDIAMU_CONF_EUL_RADIO_LABEL_DESC"
+		>
+			<option value="1">COM_MEDIAMU_CONF_YES</option>
+			<option value="0">COM_MEDIAMU_CONF_NO</option>
+		</field>
+                
+		
+		<field 	name="mediamu_max_file_size"
+				type="text"
+				size="4"
+				default="10"
+				label="COM_MEDIAMU_CONF_FIELD_MFS_LABEL"
+				description="COM_MEDIAMU_CONF_FIELD_MFS_LABEL_DESC"
+		/>
+		
+		<field 	name="chunk_size"
+				type="text"
+				size="4"
+				default="0"
+				label="COM_MEDIAMU_CONF_FIELD_CHUNK_SIZE_LABEL"
+				description="COM_MEDIAMU_CONF_FIELD_CHUNK_SIZE_LABEL_DESC"
+		/>
+                
+                <field 	name="chunk_unit" 
+				type="list" 
+				default="b"
+				label="COM_MEDIAMU_CONF_FIELD_CHUNK_UNIT_LABEL" 
+				description="COM_MEDIAMU_CONF_FIELD_CHUNK_UNIT_LABEL_DESC"
+		>
+			<option value="b">B</option>
+			<option value="kb">KB</option>
+			<option value="mb">MB</option>
+		</field>
+		
+		<field 	name="image_file_extensions"
+				type="text"
+				size="50"
+				default="jpg,bmp,png,gif,JPG,BMP,PNG,GIF"
+				label="COM_MEDIAMU_CONF_FIELD_IMAGE_EXTENSIONS_LABEL"
+				description="COM_MEDIAMU_CONF_FIELD_IMAGE_EXTENSIONS_LABEL_DESC"
+		/>
+		
+		<field 	name="other_files_extension"
+				type="text"
+				size="50"
+				default="doc,docx,xls"
+				label="COM_MEDIAMU_CONF_FIELD_OTHER_FILES_EXTENSIONS_LABEL"
+				description="COM_MEDIAMU_CONF_FIELD_OTHER_FILES_EXTENSIONS_LABEL_DESC"
+		/>
+		
+		<field 	name="unique_names" 
+				type="radio" 
+				default="0"
+				label="COM_MEDIAMU_CONF_UN_FIELD_RADIO_LABEL" 
+				description="COM_MEDIAMU_CONF_UN_FIELD_RADIO_LABEL_DESC"
+		>
+			<option value="1">COM_MEDIAMU_CONF_YES</option>
+			<option value="0">COM_MEDIAMU_CONF_NO</option>
+		</field>
+		
+		<field 	name="rename" 
+				type="radio" 
+				default="0"
+				label="COM_MEDIAMU_CONF_RENAME_FIELD_RADIO_LABEL" 
+				description="COM_MEDIAMU_CONF_RENAME_FIELD_RADIO_LABEL_DESC"
+		>
+			<option value="1">COM_MEDIAMU_CONF_YES</option>
+			<option value="0">COM_MEDIAMU_CONF_NO</option>
+		</field>
+		
+		<field 	type="spacer" 
+				name="myspacer" 
+				class="text"
+				label="COM_MEDIAMU_CONF_IMAGE_SETTINGS_SPACER_LABEL"
+		/>
+		
+		<field type="spacer" name="ir" hr="true" />
+		
+		<field 	type="spacer" 
+				name="myspacer" 
+				class="text"
+				label="COM_MEDIAMU_CONF_IMAGE_SETTINGS_SPACER_LABEL"
+		/>
+		
+		<field 	name="enable_image_resizing" 
+				type="radio" 
+				default="0" 
+				label="COM_MEDIAMU_CONF_IMAGE_FIELD_RESIZING_RADIO_LABEL" 
+				description="COM_MEDIAMU_CONF_IMAGE_FIELD_RESIZING_RADIO_LABEL_DESC"
+		>
+			<option value="1">COM_MEDIAMU_CONF_YES</option>
+			<option value="0">COM_MEDIAMU_CONF_NO</option>
+		</field>
+		
+		<field 	name="resize_width"
+				type="text"
+				size="5"
+				default="640"
+				label="COM_MEDIAMU_CONF_FIELD_IMAGE_RESIZING_WIDTH_LABEL"
+				description="COM_MEDIAMU_CONF_FIELD_IMAGE_RESIZING_WIDTH_LABEL_DESC"
+		/>
+		
+		<field 	name="resize_height"
+				type="text"
+				size="5"
+				default="480"
+				label="COM_MEDIAMU_CONF_FIELD_IMAGE_RESIZING_HEIGHT_LABEL"
+				description="COM_MEDIAMU_CONF_FIELD_IMAGE_RESIZING_HEIGHT_LABEL_DESC"
+		/>
+		
+		<field 	name="resize_quality"
+				type="text"
+				size="5"
+				default="90"
+				label="COM_MEDIAMU_CONF_FIELD_IMAGE_RESIZING_QUALITY_LABEL"
+				description="COM_MEDIAMU_CONF_FIELD_IMAGE_RESIZING_QUALITY_LABEL_DESC"
+		/>
+		
+		
+	</fieldset>
+	
+	<fieldset 	name="permissions" 
+				label="JCONFIG_PERMISSIONS_LABEL"
+				description="JCONFIG_PERMISSIONS_DESC"
+	>		
+	
+		<field 	name="rules" 
+				type="rules" 
+				label="JCONFIG_PERMISSIONS_LABEL" 
+				class="inputbox" 
+				validate="rules" 
+				filter="rules" 
+				component="com_mediamu"
+				section="component"	
+		/>
+		
+	</fieldset>
+</config>

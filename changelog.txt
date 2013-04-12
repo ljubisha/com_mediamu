@@ -1,0 +1,11 @@
+com_mediamu changelog
+
+version /1.1
+security update
+
+version / 1.0.2
+update: added option for selection of all runtimes
+
+version / 1.0.1
+code fix: valid display of server response when error occurs
+

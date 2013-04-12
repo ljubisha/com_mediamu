@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+    <name>COM_MEDIAMU</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>August 15</creationDate>
+    <author>Ljubisa Milivojevic</author>
+    <authorEmail>ljufisha.dev@gmail.com</authorEmail>
+    <authorUrl>http://ljufisha.blogspot.com</authorUrl>
+    <copyright>Copyright (C) 2012  Ljubisa - ljufisha.dev@gmail.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+        
+    <!--  The version string is recorded in the components table -->
+    <version>1.1</version>
+    
+    <!-- The description is optional and defaults to the name -->
+    <description>
+        Advanced media manager and uploader for Joomla! 
+    </description>
+ 
+    <update> 
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+ 
+    <!-- Site Main File Copy Section -->
+    <!-- Note the folder attribute: This attribute describes the folder
+  		to copy FROM in the package to install therefore files copied
+  		in this section are copied from /site/ in the package -->
+    <media destination="com_mediamu" folder="media">
+        <filename>index.html</filename>
+        <folder>img</folder>
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+ 
+    <administration>
+        <!-- Administration Menu Section -->
+        <menu>COM_MEDIAMU_MENU</menu>
+        <!-- Administration Main File Copy Section -->
+        <!-- Note the folder attribute: This attribute describes the folder
+     			to copy FROM in the package to install therefore files copied
+     			in this section are copied from /admin/ in the package -->
+        <files folder="admin">
+            <!-- Admin Main File Copy Section -->
+            <filename>index.html</filename>
+            <filename>mediamu.php</filename>
+            <filename>controller.php</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <!-- SQL files section -->
+            <folder>sql</folder>
+        </files>
+		
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_mediamu.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_mediamu.sys.ini</language>
+        </languages>
+		
+    </administration>
+ 
+</extension>
