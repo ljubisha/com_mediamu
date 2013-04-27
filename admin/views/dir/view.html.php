@@ -57,6 +57,8 @@ class MediamuViewDir extends JView
 
             jQuery(document).ready(function ($) {
                 
+                $('input.delete').attr('checked', false);
+                
                 function ajaxReq(dataString, action) {
                     $('span#proccess').addClass('loading');
                     $.ajax({
